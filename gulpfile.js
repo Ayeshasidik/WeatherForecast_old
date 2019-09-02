@@ -11,7 +11,7 @@ gulp.task('cucumber',function(){
 });
 
 var file;
-gulp.task('Aish',function(){
+gulp.task('execute',function(){
 	return gulp.src('*features/testfeatures/'+argv.file+'.feature').pipe(cucumber({
 		'steps': '*features/step_definitions/'+argv.file+'.js',
 		'support': '*features/support/*.js',
@@ -20,4 +20,4 @@ gulp.task('Aish',function(){
 	}));
 });
 
-gulp.task('default',['Aish']);
+gulp.task('default',['execute']);
