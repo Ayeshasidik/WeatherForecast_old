@@ -17,7 +17,7 @@ Set the local host path of application running in script.
 	npm install selenium-cucumber-js --save-dev
     
 **Run script:**
-gulp Aisha --file file-name
+gulp execute --file weatherForecastSummary.feature
 
 
 
